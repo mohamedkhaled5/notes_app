@@ -1,16 +1,17 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:noteapp/constants.dart';
 
 class CusomTextField extends StatelessWidget {
-  const CusomTextField({super.key});
-
+  const CusomTextField({super.key, required this.hint, this.maxLines = 1});
+  final String hint;
+  final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
       cursorColor: KPrimaryColor,
+      maxLines: maxLines,
       decoration: InputDecoration(
-        hintText: 'title',
+        hintText: hint,
         hintStyle: TextStyle(color: KPrimaryColor),
         border: buildBorder(),
         enabledBorder: buildBorder(),

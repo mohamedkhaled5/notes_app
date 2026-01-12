@@ -9,7 +9,14 @@ class AddNotedBottmeSheet extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
 
-      child: Column(children: [SizedBox(height: 32), CusomTextField()]),
+      child: Column(
+        children: const [
+          SizedBox(height: 32),
+          CusomTextField(hint: 'Title'),
+          SizedBox(height: 16),
+          CusomTextField(hint: 'content', maxLines: 5),
+        ],
+      ),
     );
   }
 }
