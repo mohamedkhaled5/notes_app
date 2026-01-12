@@ -2,13 +2,24 @@ import 'package:flutter/material.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key});
-
+  final data = const [
+    Colors.red,
+    Colors.blue,
+    Colors.green,
+    Colors.yellow,
+    Colors.orange,
+    Colors.purple,
+    Colors.pink,
+    Colors.grey,
+    Colors.brown,
+    Colors.teal,
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
       decoration: BoxDecoration(
-        color: const Color(0xffFFCC80),
+        color: data[8],
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -25,7 +36,7 @@ class NoteItem extends StatelessWidget {
                 'build your career with mohamed khaled build your career with mohamed khaled',
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.5),
-                  fontSize: 20,
+                  fontSize: 18,
                 ),
               ),
             ),
