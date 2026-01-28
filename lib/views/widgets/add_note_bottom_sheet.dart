@@ -15,9 +15,9 @@ class AddNotedBottmeSheet extends StatelessWidget {
         child: Column(
           children: const [
             SizedBox(height: 32),
-            CusomTextField(hint: 'Title'),
+            CustomTextField(hint: 'Title'),
             SizedBox(height: 16),
-            CusomTextField(hint: 'content', maxLines: 5),
+            CustomTextField(hint: 'content', maxLines: 5),
             SizedBox(height: 24),
 
             CustomButton(),
