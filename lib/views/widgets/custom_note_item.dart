@@ -47,7 +47,7 @@ class NoteItem extends StatelessWidget {
                 child: Text(
                   'build your career with mohamed khaled build your career with mohamed khaled',
                   style: TextStyle(
-                    color: Colors.black.withOpacity(0.5),
+                    color: Colors.black.withValues(alpha: 0.5),
                     fontSize: 18,
                   ),
                 ),
@@ -62,7 +62,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 'May 10, 2023',
                 style: TextStyle(
-                  color: Colors.black.withOpacity(0.5),
+                  color: Colors.black.withValues(alpha: 0.5),
                   fontSize: 16,
                 ),
               ),
