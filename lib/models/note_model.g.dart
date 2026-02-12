@@ -28,9 +28,9 @@ class NoteModelAdapter extends TypeAdapter<NoteModel> {
       ..writeByte(1)
       ..write(obj.subTitle)
       ..writeByte(2)
-      ..write(obj.date)
-      ..writeByte(3)
-      ..write(obj.color);
+      ..write(obj.date);
+    // ..writeByte(3)
+    // ..write(obj.color);
   }
 
   @override

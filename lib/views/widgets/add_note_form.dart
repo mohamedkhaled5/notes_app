@@ -45,14 +45,14 @@ class _AddNoteFormWidgetState extends State<AddNoteFormWidget> {
             onTap: () {
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
-                var currentDate = DateTime.now();
-                var formattedCurrentDate = DateFormat.yMd().format(currentDate);
+
                 var noteModel = NoteModel(
                   title: title!,
                   subTitle: subTitle!,
-                  date: formattedCurrentDate,
-                  color: Colors.blue.toARGB32(),
+                  date: DateTime.now().toString(),
+                  color: Colors.blue.value,
                 );
+
                 BlocProvider.of<AddNoteCubit>(context).addNote(noteModel);
               } else {
                 autovalidateMode = AutovalidateMode.always;
